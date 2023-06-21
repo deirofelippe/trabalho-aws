@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Página de Cadastro</title>
+  </head>
+  <body>
+    <section>
+      <div class="form-box">
+        <div class="form-value">
+          <form action="">
+            <h2>Cadastro</h2>
+            <div class="inputbox">
+              <input id="nome" type="name" placeholder="Nome" required />
+              <label for="">Nome</label>
+            </div>
+
+            <div class="inputbox">
+              <input id="data" type="date" placeholder="Data" />
+              <label for="">Data de Nascimento</label>
+            </div>
+
+            <div class="inputbox">
+              <input id="cpf" type="cpf" placeholder="CPF" required />
+              <label for="">CPF</label>
+            </div>
+
+            <div class="inputbox">
+              <input id="telefone" type="tel" placeholder="Telefone" required />
+              <label for="">Telefone</label>
+            </div>
+
+            <div class="inputbox">
+              <input id="email" type="email" placeholder="Email" required />
+              <label for="">Email</label>
+            </div>
+
+            <div class="inputbox">
+              <input id="senha" type="password" placeholder="Senha" required />
+              <label for="">Senha</label>
+            </div>
+
+            <div class="inputbox">
+              <input
+                id="confirmar_senha"
+                type="password"
+                placeholder="Confirmar Senha"
+                required
+              />
+              <label for="">Confirmar Senha</label>
+            </div>
+
+            <input
+              type="submit"
+              id="cadastrar"
+              value="Entrar"
+              class="btn-solid"
+            />
+            <div class="register">
+              <p>
+                Já possui uma conta?
+                <a href="../Tela Login/index.html">Faça o Login</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="./cadastro.js"></script>
+  </body>
+</html>

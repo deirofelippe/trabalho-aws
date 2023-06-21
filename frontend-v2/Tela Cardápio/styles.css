@@ -1,0 +1,545 @@
+*MENU*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    background-image: url(img-fundo-branco-1.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+
+  
+  a {
+    color: #800000;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    opacity: 0.7;
+  }
+  
+  .logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, Helvetica, Arial, sans-serif;
+    background: #fff;
+    height: 8vh;
+  }
+  
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+  }
+
+  .nav-list li a:hover{
+    border-bottom: 2px solid #800000;
+  }
+  
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+  }
+
+ 
+
+  /*H2 E BARRA*/
+  h2{
+    font-family: sans-serif;
+    color: #23232e;
+    font-size: 1.8rem;
+    margin-left: 100px;
+    margin-top: 50px;
+    text-transform: uppercase;
+  }
+  
+  .barra{
+    width: 120px;
+    height: 6px;
+    background-color: #aa011c;
+    margin-left: 100px;
+    margin-top: -10px;
+  }
+
+   /*card-um*/
+   .container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+    margin-top: 100px;
+  }
+
+  .container .card-um{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /* border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);*/
+    background-image: url(Pizza-banana-preço.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 6px solid #23232e;
+  }
+
+  .container .card-um .content{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+    height: 100%;
+  }
+
+  .container .card-um:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .container .card-um .content h3{
+    font-size: 2.4em;
+    color: #fff;
+    z-index: 1;
+  }
+
+  .container .card-um .content p{
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 300;
+    height: 200px;
+  }
+
+  /*carde-dois*/
+  .container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+  }
+
+  .container .card-dois{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Pizza-frango-valor.avif);
+    background-position: center;
+    background-size: cover;
+    border: 6px solid #23232e;
+  }
+
+  .container .card-dois .content{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+    height: 100%;
+  }
+
+  .container .card-dois:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .container .card-dois, .content h3{
+    font-size: 1.8em;
+    color: #fff;
+    z-index: 1;
+  }
+
+  .container .card-dois .content p{
+    font-size: 0.9em;
+    color: #fff;
+    font-weight: 300;
+  }
+
+
+  /*carde-tres*/
+  .container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+  }
+
+  .container .card-tres{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Pizza-Vegana-Preço.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 6px solid #23232e;
+  }
+
+  .container .card-tres .content{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+    height: 100%;
+  }
+
+  .container .card-tres:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .container .card-tres, .content h3{
+    font-size: 1.5em;
+    color: #fff;
+    z-index: 1;
+  }
+
+  .container .card-tres .content p{
+    font-size: 1.0em;
+    color: #fff;
+    font-weight: 300;
+  }
+
+
+
+  /*CUBO*/
+  .cubo{
+    margin-top: 100px;
+  }
+
+  /*separação*/
+  .separacao{
+    width: 340px;
+    height: 490px;
+    background-color: #23232e;
+    border-radius: 12px;
+    margin-right: 20px;
+
+
+  }
+
+  /*card-quatro*/
+  .container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+  }
+
+  .container .card-quatro{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Pizza-alho-preço.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 6px solid #23232e;
+  }
+
+  .container .card-quatro .content{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+    height: 100%;
+  }
+
+  .container .card-quatro:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .container .card-quatro .content h3{
+    font-size: 2.4em;
+    color: #fff;
+    z-index: 1;
+  }
+
+  .container .card-quatro .content p{
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 300;
+    height: 200px;
+    align-items: left;
+  }
+
+
+
+
+
+  /*card-cinco*/
+  .container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+  }
+
+  .container .card-cinco{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Pizza-camarão-preço.png);
+    background-position: center;
+    background-size: cover;
+    border: 6px solid #23232e;
+  }
+
+  .container .card-cinco .content{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+    height: 100%;
+  }
+
+  .container .card-cinco:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .container .card-cinco .content h3{
+    font-size: 2.4em;
+    color: #fff;
+    z-index: 1;
+  }
+
+  .container .card-cinco .content p{
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 300;
+    height: 200px;
+    align-items: left;
+  }
+
+
+  /*card-seis*/
+  .container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+  }
+
+  .container .card-seis{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(pizza-ouro-preto-preço.avif);
+    background-position: center;
+    background-size: cover;
+    border: 6px solid #23232e;
+  }
+
+  .container .card-seis .content{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+    height: 100%;
+  }
+
+  .container .card-seis:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .container .card-seis .content h3{
+    font-size: 2.4em;
+    color: #fff;
+    z-index: 1;
+  }
+
+  .container .card-seis .content p{
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 300;
+    height: 200px;
+    align-items: left;
+  }
+
+
+  /*FOOTER*/
+  .footer-container{
+    max-width: 1170px;
+    margin:auto;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-col ul{
+    list-style: none;
+    padding-inline-start: 0px;
+  }
+  .footer{
+    background-color: #24262b;
+    padding: 70px 0;
+    margin-top: 150px;
+    font-family: sans-serif;
+  }
+  .footer-col{
+     width: 25%;
+     height: 200px;
+  }
+  .footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #aa011c;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #aa011c;
+  }
+  
+  /*responsive*/
+  @media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+      margin: 0;
+  }
+  }
+
+
+
+
+
+
+
+
+
+
+  

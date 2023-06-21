@@ -1,0 +1,49 @@
+version: "3.1"
+
+services:
+  node:
+    image: node:19.9.0-alpine3.16
+    container_name: node
+    working_dir: /home/node
+    user: node
+    ports:
+      - 8000:8000
+    volumes:
+      - "./:/home/node"
+    command: tail -f /dev/null
+
+  banco:
+    image: mysql:5.7.41
+    restart: always
+    container_name: banco
+    ports:
+      - 6603:3306
+    volumes:
+      - "database_mysql5:/var/lib/mysql"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: root
+      MYSQL_DATABASE: trabalho_aws
+
+  phpmyadmin:
+    image: phpmyadmin:5.2.0-apache
+    restart: always
+    container_name: phpmyadmin
+    ports:
+      - 8888:80
+    environment:
+      # PMA_HOST: banco
+      # PMA_PORT: 3306
+      # UPLOAD_LIMIT: 123M
+      # PMA_USER: root
+      # PMA_PASSWORD: root
+      PMA_HOST: trabalho-rds.ce5plmgnoipi.us-west-2.rds.amazonaws.com
+      PMA_PORT: 3306
+      PMA_USER: admin
+      PMA_PASSWORD: bancoadmin
+    depends_on:
+      - banco
+
+volumes:
+  database_mysql5:
+    external: true
